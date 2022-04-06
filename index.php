@@ -1,3 +1,4 @@
+<?php ?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,8 @@
     <title>Conversions</title>
 </head>
 <body>
-    <div class="temperature"><?php include 'temperature.php' ?></div>
-    <div class="speed"><?php include 'speed.php' ?></div>
-    <div class="Mass"><?php include 'mass.php' ?></div>
-    
+    <div class="temperature"><?php include './temperature.php' ?></div>
+    <div class="speed"><?php include './speed.php' ?></div>
+    <div class="Mass"><?php include './mass.php' ?></div>
 </body>
 </html>
