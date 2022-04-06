@@ -1,4 +1,6 @@
 <?php
+$kilograms = isset($_GET["kilograms"])? $_GET["kilograms"]: 0;
+
 $grams;
 $kilograms;
 
@@ -16,14 +18,19 @@ function toKilos(float $grams){
 
 <div>
     <h2>Mass Conversion</h2>
-        <div>
+       <form method="get">
             <label for="kilograms">Kilograms</label>
-            <input type="number" id="kilograms"/>
-            <p><?php echo $_POST["name"]; ?></p>
-        </div>
+            <input type="number" name="kilograms"/>
+            <input type="submit">
+        </form>
+        <form method="get">
+        <label for="grams">Grams</label>
+            <input type="number" name="grams"/>
+            <input type="submit">
+        </form>
         <div>
             <label for="grams">Grams</label>
-            <input type="number" id="grams"/>
-            <p></p>
+            <input type="number" name="grams"/>
+            <p><?php echo $_POST["name"]; ?></p>
         </div>
 </div>
