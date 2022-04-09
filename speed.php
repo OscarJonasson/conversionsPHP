@@ -18,6 +18,8 @@ function kmhToKnots(int $kmh = 0) {
     return $knots;
 }
 
+
+
 ?>
 
 <h2>Speed conversions</h2> 

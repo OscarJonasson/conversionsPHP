@@ -1,33 +1,26 @@
 <?php
-
 $celsius=isset($_GET['celsius'])? $_GET['celsius']: 0;
 
-
-// if(isset($_GET['celsius'])){
-//     $celsius = $_GET['celsius'];
-// }else{
-//     $celsius = 0;
-// }
-
-function celsiusFahr(int $celsius){ 
+function celsiusFahr(int $celsius=0){ 
     $fahr = (($celsius * 1.8) + 32);
-    echo $fahr;
+    echo $fahr . "°F";
 }
 
-function celsiusKelv(int $celsius){ 
+function celsiusKelv(int $celsius=0){
     $kelv = (($celsius + 273.15));
-    echo $kelv;
+    echo $kelv . " K";
 }
 
 
 ?>
 
 <h2>Temperature conversions: </h2>
-<form  method="GET" action="temperature.php">
+<form  method="GET" action="index.php">
     <label for="celsius">Celsius: </label>
-    <input type="number" id="celsius" name="celsius" placeholder="Current temp is 0 °c"/>
-    <input type="submit" onclick="">
+    <input type="number" id="celsius" name="celsius" placeholder="Current temp is 0 °c"
+    required/>
+    <input type="submit">
 </form>
 <div class="celsius"><?="Current celsius is: ". $celsius . " °c"?></div>
-<div id="kelvin">Kelvin: <?= celsiusKelv($celsius) . " K" ?></div>
-<div class="fahrenheit">Fahrenheit: <?= celsiusFahr($celsius) . "°F"?></div>
+<div id="kelvin">Kelvin: <?= celsiusKelv($celsius) ?></div>
+<div class="fahrenheit">Fahrenheit: <?= celsiusFahr($celsius)?></div>
