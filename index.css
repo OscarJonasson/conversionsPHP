@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: rgb(132, 131, 131);
+  line-height: 1.5;
+  font-family: 'Catamaran', sans-serif;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+}
+
+.temperature,
+.speed,
+.mass {
+  margin: 1rem;
+  border: outset 5px silver;
+  padding: 2rem;
+  box-shadow: 0 0 20px -10px black;
+  transition: box-shadow 500ms;
+}
+
+.temperature:hover,
+.speed:hover,
+.mass:hover {
+  box-shadow: 0 0 20px -10px white;
+  border: inset 5px silver;
+}
