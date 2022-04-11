@@ -6,8 +6,6 @@ $kmh;
 $ms;
 $knots;
 
-
-
 function kmhToMs(int $kmh = 0) {
     $ms = (5 / 18) * $kmh;
     return $ms;
@@ -21,9 +19,9 @@ function kmhToKnots(int $kmh = 0) {
 ?>
 
 <h2>Speed conversions</h2> 
-<form action="speed.php" method="get">
+<form action="index.php" method="get">
     <label for="speed">Speed (km/h):</label>
-    <input type="number" name="kmh" placeholder="Insert speed here"> <br> 
+    <input required type="number" name="kmh" placeholder="Insert speed here"> 
     <input type="submit">
 </form>
     <div class="ms">m/s: <?=kmhToMs($kmh) ?></div>
