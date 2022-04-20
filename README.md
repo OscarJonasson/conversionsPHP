@@ -6,4 +6,3 @@ Measurement conversions for temperature, speed and mass.
 
 - PHP
 - HTML
-- JS
