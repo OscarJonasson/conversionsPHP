@@ -21,13 +21,13 @@ function toKilos(float $grams = 0){
     <h2>Mass Conversion</h2>
        <form aciton="index.php" method="get">
             <label for="kilograms">Kilograms</label>
-            <input required type="number" name="kilograms"/>
+            <input required type="number" name="kilograms" placeholder="Insert mass (kg)"/>
             <input type="submit">
         </form>
         <p>Grams: <?= toGrams($kilograms) ?></p>
         <form method="get">
         <label for="grams">Grams</label>
-            <input required type="number" name="grams"/>
+            <input required type="number" name="grams" placeholder="Insert mass (g)"/>
             <input type="submit">
         </form>
         <p>Kilograms: <?= toKilos($grams) ?></p>

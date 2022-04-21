@@ -21,7 +21,7 @@ function kmhToKnots(int $kmh = 0) {
 <h2>Speed conversions</h2> 
 <form action="index.php" method="get">
     <label for="speed">Speed (km/h):</label>
-    <input required type="number" name="kmh" placeholder="Insert speed here"> 
+    <input required type="number" name="kmh" placeholder="Insert speed"> 
     <input type="submit">
 </form>
     <div class="ms">m/s: <?=kmhToMs($kmh) ?></div>

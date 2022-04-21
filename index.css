@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
 
 * {
   padding: 0;
@@ -11,9 +11,9 @@ body {
   justify-content: flex-start;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: rgb(132, 131, 131);
+  background-color: rgb(132, 132, 131);
   line-height: 1.5;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
 }
 
 h2 {
@@ -35,6 +35,12 @@ input {
   padding: 2rem;
   box-shadow: 0 0 20px -10px black;
   transition: box-shadow 500ms;
+  width: 25rem;
+  height: 15rem;
+}
+
+.temperature {
+  margin-top: 2rem;
 }
 
 .temperature:hover,
